@@ -16,3 +16,10 @@
 ### compare_plobability.py
 
 ホップの壺モデルの確率はその順序に依存しないことを比較，確認できる．
+
+
+### plot_process.py
+
+ホップの壺モデルの過程をリアルタイム描画し，最終的な結果を `final_urn.png` に保存する．
+
+![例](./final_urn.png)

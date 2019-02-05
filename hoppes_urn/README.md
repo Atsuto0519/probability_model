@@ -22,4 +22,4 @@
 
 ホップの壺モデルの過程をリアルタイム描画し，最終的な結果を `final_urn.png` に保存する．
 
-![例](./final_urn.png)
+![](hoppes_urn/final_urn.png)

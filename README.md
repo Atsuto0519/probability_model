@@ -1,0 +1,2 @@
+# probability_model
+いろいろな確率モデルを図解するためにPythonで実装した．

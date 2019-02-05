@@ -22,4 +22,4 @@
 
 ホップの壺モデルの過程をリアルタイム描画し，最終的な結果を `final_urn.png` に保存する．
 
-![](hoppes_urn/final_urn.png)
+![](https://github.com/Atsuto0519/probability_model/blob/master/hoppes_urn/finial_urn.png)

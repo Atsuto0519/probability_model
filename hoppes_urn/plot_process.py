@@ -171,6 +171,6 @@ print("processed colorball="+str(seq_colorball_index))
 print("P(colorball)="+str(hoppes_urn.P(seq_colorball_index, a=a, n=n)))
 
 # 最終的な結果を保存
-plt.savefig('hoppes_urn/finial_urn.png')
+plt.savefig('hoppes_urn/final_urn.png')
 # グラフを閉じる
 plt.close()

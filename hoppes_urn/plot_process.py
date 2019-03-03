@@ -168,7 +168,7 @@ seq_colorball_index = [seq_colorball_unique.index(i) for i in seq_colorball]
 print("processed colorball="+str(seq_colorball_index))
 
 # 最終的なホップの壺の計算結果
-print("P(colorball)="+str(hoppes_urn.P(seq_colorball_index, a=a, n=n)))
+print("P(colorball)="+str(hoppes_urn.P(seq_colorball_index, a=a)))
 
 # 最終的な結果を保存
 plt.savefig('hoppes_urn/final_urn.png')

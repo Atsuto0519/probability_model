@@ -3,13 +3,13 @@ import hoppes_urn
 
 # 試行回数
 a = 5
-n = 6
 print("a="+str(a))
-print("n="+str(n))
 
 # 試行に伴って対応する色系列(色の並びに決まりはない)
 x_1 = list("赤黄黄赤赤緑")
 x_2 = list("緑黄黄赤赤赤")
+n = len(x_1)
+print("n="+str(n))
 print("２つの入力が同じ確率で表されることを確認する")
 print("input x_1="+str(x_1))
 print("input x_2="+str(x_2))
@@ -23,5 +23,5 @@ print("processed x_1="+str(x_1_index))
 print("processed x_2="+str(x_2_index))
 
 # 最終的なホップの壺の計算結果
-print("x_1 processed Hoppe's urn model="+str(hoppes_urn.P(x_1_index, a=a, n=n)))
-print("x_2 processed Hoppe's urn model="+str(hoppes_urn.P(x_2_index, a=a, n=n)))
+print("x_1 processed Hoppe's urn model="+str(hoppes_urn.P(x_1_index, a=a)))
+print("x_2 processed Hoppe's urn model="+str(hoppes_urn.P(x_2_index, a=a)))

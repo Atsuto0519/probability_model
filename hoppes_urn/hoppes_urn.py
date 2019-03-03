@@ -10,11 +10,12 @@ def AF(a, n) :
 
 
 # ホップの壺の試行に対する確率
-def P(n_vec, *, a, n) :
+def P(n_vec, *, a) :
     '''
     色玉がある組み合わせで壺に入れられる確率は，色玉の入れられた順序に依存しないことが確認できる
     '''
 
+    n = len(n_vec)
     count_unique = np.zeros(len(set(n_vec)))
     for i in range(len(n_vec)) :
         if (i == 0) :
@@ -24,7 +25,6 @@ def P(n_vec, *, a, n) :
             res *= count_unique[n_vec[i]]
         else :
             res *= a
-
     return res/AF(a,n)
 
 
@@ -81,6 +81,23 @@ def process(*, a, n) :
         p_colors = []
         p_colors.extend(count_colors/(m+1+a))
         p_colors.append(a/(m+1+a))
-
-
     return seq
+
+
+# イーウェンスの抽出公式
+def P_E(n_vec, *, a) :
+    n_vec = list(n_vec)
+    len_n = len(n_vec)
+    print(n_vec)
+    if (0 in n_vec) :
+        print(n_vec)
+        # n_vec.remove(0)
+    else :
+        print("a")
+    c = len(n_vec)
+    p = 0
+
+    if (len_n != c) :
+        n_vec = np.array(n_vec)
+        p = np.math.pow(a,c)*np.math.factorial(sum(n-1))
+    return p
